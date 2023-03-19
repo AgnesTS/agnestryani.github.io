@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+    body {
+      background-image: url(backkalku.jpg);
+      background-repeat: no-repeat;
+      background-size:cover;
+    }
+    h1 {
+    color: rgb(26, 129, 170);
+    padding: 30px;
+} 
+    </style>
+</head>
+<h1>Masukkan Biodata Anda</h1>
+<form name="f_" action="#" method="get">
+  <table>
+   <tr>
+     <td>Nama : </td>
+     <td><input type="text" id="nama" size="40" maxlength="40"  style="border-radius: 5px" name="nama" pattern="^[a-zA-Z\s'-]{1,255}$"></td>
+   </tr>
+   <tr>
+    <td>Tempat Lahir : </td>
+    <td><input type="text" id="tmp_lahir" size="40" maxlength="40"  style="border-radius: 5px" name="tmp_lahir" pattern="^[a-zA-Z\s'-]{1,255}$"></td>
+  </tr>
+  <tr>
+    <td>Agama : </td>
+    <td><input type="text" id="agama" size="40" maxlength="40"  style="border-radius: 5px" name="agama" pattern="^[a-zA-Z\s'-]{1,50}$"></td>
+  </tr>
+  <tr>
+    <td>Jenis Kelamin : </td>
+    <td><input type="text" id="js_kelamin" size="40" maxlength="40"  style="border-radius: 5px" name="js_kelamin" pattern="^[a-zA-Z\s'-]{1,50}$"></td>
+  </tr>
+   <tr>
+     <td>Alamat Email :</td>
+     <td><input type="text" id="email" size="40"  maxlength="40"  style="border-radius: 5px" name="email" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+[.]+[a-zA-Z]{2,10}$" placeholder="agnes@gmail.com"></td>
+   </tr>
+   <tr>
+     <td>Umur : </label>
+     <td><input type="text" id="umur" size="40"  maxlength="40"  style="border-radius: 5px" name="umur" pattern="^([1-8][1-9])$" placeholder="17-80"></td>
+     </tr>
+   <tr>
+     <td>Tanggal Lahir : </td>
+     <td><input type="text" id="tanggal_lahir" size="40"  maxlength="40"  style="border-radius: 5px"  name="tanggal_lahir" pattern="^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d$" placeholder="dd-mm-yyyy"></td>
+   </tr>
+   <tr>
+     <td>no HP: </td>
+     <td><input type="text" id="no_hp" size="40"  maxlength="40"  style="border-radius: 5px"  name="no_hp" pattern="^\+?([ -]?\d+)+|\(\d+\)([ -]\d+)$"></td>
+   </tr>
+   <tr>
+    <td>Kewarganegaraan : </td>
+    <td><input type="text" id="kewarganegaraan" size="40"  maxlength="40"  style="border-radius: 5px"  name="kewarganegaraan" pattern="^[a-zA-Z\s'-]{1,255}$"></td>
+   </tr>
+</table>
+   <input type="submit" value="Submit">
+</form>
+</body>
+</html>
